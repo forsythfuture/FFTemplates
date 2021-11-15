@@ -1,0 +1,38 @@
+---
+output: 
+  pdf_document:
+    includes:
+      in_header: "preamble.tex"
+bibliography: bibliography.bib
+geometry: margin=1in
+fontsize: 10pt
+linestretch: 1
+---
+
+\myTitle
+
+## Request
+
+[Add Name Here] from [Add Organization Here] requested information on 
+
+## Research Method
+
+## Results
+
+```{r include = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
+```
+
+```{r include = FALSE}
+#load libraries here
+library(tidyverse)
+library(srvyr)
+library(tidycensus)
+library(kableExtra)
+```
+
+## References
+
+---
+nocite: '@*'
+...
