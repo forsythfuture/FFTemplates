@@ -5,7 +5,7 @@ The FFTemplates package contains a data request template.
 ## Installation
 
 1. Install the devtools package, if not already installed: install.packages('devtools').
-2. Install the FFtools package directly from GitHub: devtools::install_github('danielludolf/FFtemplates').
+2. Install the FFtools package directly from GitHub: devtools::install_github('forsythfuture/FFtemplates').
 3. Library FFTemplates within R.
 
 ## How it works
