@@ -1,4 +1,4 @@
-\name{FFTemplates}
+\name{Data Request Template}
 \alias{Data Request Template}
 \title{Data Request Template}
 \usage{

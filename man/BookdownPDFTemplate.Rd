@@ -1,4 +1,4 @@
-\name{FFTemplates}
+\name{Bookdown Template}
 \alias{Bookdown Template}
 \title{Bookdown Template}
 \usage{
