@@ -1,5 +1,5 @@
-\name{skelton}
-\alias{Data Request Template}
+\name{Data Request Template}
+\alias{FFTemplates}
 \title{Data Request Template}
 \usage{
 File -> New File -> RMarkdown -> From Template -> Data Request Template
