@@ -1,0 +1,17 @@
+---
+output:
+  bookdown::pdf_book:
+    number_sections: false
+    toc: false
+    includes:
+      in_header: "preamble.tex"
+site: bookdown::bookdown_site
+documentclass: book
+classoption: openany
+# github-repo: forsythfuture/Add Repository Name Here
+geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
+fontsize: 10pt
+bibliography: bibliography.bib
+nocite: '@*'
+biblio-style: apalike
+---
