@@ -1,5 +1,5 @@
-\name{Data Request Template}
-\alias{FFTemplates}
+\name{FFTemplates}
+\alias{Data Request Template}
 \title{Data Request Template}
 \usage{
 File -> New File -> RMarkdown -> From Template -> Data Request Template

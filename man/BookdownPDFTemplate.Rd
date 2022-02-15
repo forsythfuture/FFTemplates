@@ -1,5 +1,5 @@
-\name{Bookdown Template}
-\alias{FFTemplates}
+\name{FFTemplates}
+\alias{Bookdown Template}
 \title{Bookdown Template}
 \usage{
 File -> New File -> RMarkdown -> From Template -> Bookdown Template
