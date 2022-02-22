@@ -1,4 +1,4 @@
-# Package of Forsyth Futures Data Request Template
+# Package of Forsyth Futures' Templates
 
 The FFTemplates package contains a data request and PDF bookdown template.
 
