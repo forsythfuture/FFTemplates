@@ -1,16 +1,14 @@
 Package: FFTemplates
 Type: Package
 Title: Forsyth Futures Templates
-Version: 0.1.0
+Version: 0.2.0
 Author: Daniel Ludolf
 Maintainer: Daniel Ludolf <daniel@forsythfutures.org>
 Description: 
-    This package provides a data request template to be used by the 
-    Forsyth Futures staff. The preamble.tex file needs to be updated
-    with a title and organization name on lines 56 and 25, respectively.
-    The bibliography.bib file will need to be edited depending on whether
-    the packages included are used, or if additional packages are 
-    leveraged.
+    This package provides a data request and bookdown template to be used by the 
+    Forsyth Futures staff. Type either ?`Data Request Template` or 
+    ?`Bookdown Template` after loading the package, i.e., library(FFTemplates),
+    to see which lines and files need updating by the user.
 License: CC0
 Encoding: UTF-8
 LazyData: true
