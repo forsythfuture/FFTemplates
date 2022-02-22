@@ -5,6 +5,7 @@ output:
     toc: false
     includes:
       in_header: preamble.tex
+  bookdown::gitbook:
 site: bookdown::bookdown_site
 documentclass: book
 classoption: openany
