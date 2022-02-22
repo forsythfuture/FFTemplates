@@ -6,7 +6,10 @@ File -> New File -> RMarkdown -> From Template -> Bookdown Template
 }
 \description{
 This template provides a bookdown skeleton to be used by the
-Forsyth Futures' staff. 
+Forsyth Futures' staff. Click Build on the RStudio toolbar, then click 
+Configure Build Tools. Select Website on the Project build tools dropdown. 
+Update the Site directory to match where the bookdown files are located. A Build
+pane should show up likely next to your Git pane.
 
 The bibliography.bib file will need to be edited depending on whether the 
 packages included are used, or if additional packages are leveraged.
