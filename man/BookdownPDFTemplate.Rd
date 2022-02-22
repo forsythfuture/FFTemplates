@@ -5,7 +5,7 @@
 File -> New File -> RMarkdown -> From Template -> Bookdown Template
 }
 \description{
-This template provides a bookdown skeleton to be used by the
+This template provides a PDF bookdown skeleton to be used by the
 Forsyth Futures' staff. Click Build on the RStudio toolbar, then click 
 Configure Build Tools. Select Website on the Project build tools dropdown. 
 Update the Site directory to match where the bookdown files are located. A Build
