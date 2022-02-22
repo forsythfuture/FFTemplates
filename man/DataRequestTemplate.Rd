@@ -5,10 +5,12 @@
 File -> New File -> RMarkdown -> From Template -> Data Request Template
 }
 \description{
-This package provides a data request template to be used by the
-Forsyth Futures' staff. The preamble.tex file needs to be updated
-with a title and organization name on lines 56 and 25, respectively.
+This template provides a data request skeleton to be used by the
+Forsyth Futures' staff. 
+
+The preamble.tex file needs to be updated with a title and organization name on 
+lines 56 and 25, respectively.
+
 The bibliography.bib file will need to be edited depending on whether
-the packages included are used, or if additional packages are
-leveraged.
+the packages included are used, or if additional packages are leveraged.
 }
