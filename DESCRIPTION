@@ -5,10 +5,10 @@ Version: 0.2.0
 Author: Daniel Ludolf
 Maintainer: Daniel Ludolf <daniel@forsythfutures.org>
 Description: 
-    This package provides a data request and bookdown template to be used by the 
-    Forsyth Futures' staff. Type either ?`Data Request Template` or 
+    This package provides a data request and PDF bookdown template to be used 
+    by the Forsyth Futures' staff. Type either ?`Data Request Template` or 
     ?`Bookdown Template` after loading the package, i.e., library(FFTemplates),
-    to see which lines and files need updating by the user.
+    to see which files and lines need updating by the user.
 License: CC0
 Encoding: UTF-8
 LazyData: true
