@@ -1,15 +1,13 @@
 # Package of Forsyth Futures Data Request Template
 
-The FFTemplates package contains a data request template.
+The FFTemplates package contains a data request and PDF bookdown template.
 
 ## Installation
 
-1. Install the devtools package, if not already installed: install.packages('devtools').
-2. Install the FFTemplates package directly from GitHub: devtools::install_github('forsythfuture/FFTemplates').
-3. Library FFTemplates within R.
+1. Install the devtools package, if not already installed: `install.packages('devtools')`.
+2. Install the FFTemplates package directly from GitHub: `devtools::install_github('forsythfuture/FFTemplates')`.
+3. `library(FFTemplates)` within R.
 
 ## How it works
 
-After installing the FFTemplates package, go to File -> New File -> RMarkdown -> From Template -> Data Request Template. The user
-will need to update lines 25 and 56 in the preamble.tex file to fit the current data request. In addition, the user will need
-to edit the bibliography.bib file if other packages are used other than the one's selected for in the RMarkdown template.
+This package provides a data request and PDF bookdown template to be used by the Forsyth Futures' staff. Type either '?`Data Request Template`' or '?`Bookdown Template`' after loading the package, i.e., `library(FFTemplates)`, to see which files and lines need updating by the user.
