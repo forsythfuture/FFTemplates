@@ -2,7 +2,7 @@
 output: 
   pdf_document:
     includes:
-      in_header: "preamble.tex"
+      in_header: preamble.tex
 bibliography: bibliography.bib
 geometry: margin=1in
 fontsize: 10pt
