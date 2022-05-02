@@ -4,6 +4,7 @@ output:
     includes:
       in_header: preamble.tex
 bibliography: bibliography.bib
+biblio-style: apalike
 geometry: margin=1in
 fontsize: 10pt
 linestretch: 1
