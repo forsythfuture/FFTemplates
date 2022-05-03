@@ -1,0 +1,8 @@
+book_filename: "Add Filename Here"
+language:
+  ui:
+    chapter_name: "Section "
+delete_merged_file: true
+rmd_subdir: true
+rmd_files: ["index.Rmd", "Untitled.Rmd"]
+           
