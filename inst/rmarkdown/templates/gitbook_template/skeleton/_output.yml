@@ -1,0 +1,4 @@
+bookdown::gitbook:
+  css: style.css
+  # this pdf should be placed in the _book folder (default folder)
+  # download: ["Same Name as the book_filename in _bookdown.yml Here.pdf"]
