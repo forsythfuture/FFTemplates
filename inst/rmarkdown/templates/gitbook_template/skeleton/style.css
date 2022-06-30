@@ -1,0 +1,8 @@
+/*changes the size of the GitBook's width on the computer scereen so it will fill all of the whitespace*/
+.book .book-body .page-wrapper .page-inner {
+  max-width: 1200px !important;
+}
+/*changes the size of plotly's legend markers so they are all the same size*/
+.legendpoints path.scatterpts {
+  d: path('M 7.5 0 A 7.5 7.5 0 1 1 0 -7.5 A 7.5 7.5 0 0 1 7.5 0 Z');
+}
