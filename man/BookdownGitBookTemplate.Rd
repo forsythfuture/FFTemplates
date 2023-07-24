@@ -26,4 +26,7 @@ repository name. Otherwise, the user can customize as they choose.
 
 The skeleton.Rmd file displays an example of how the an Rmd file should be set
 for the first Rmd following the index.Rmd file ONLY.
+
+The _404.Rmd file is blank but becomes the de facto coverpage of the GitBook
+when text is added. This file operates like any other RMarkdown document.
 }
