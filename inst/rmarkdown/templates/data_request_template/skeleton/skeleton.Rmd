@@ -18,6 +18,16 @@ linestretch: 1
 
 ## Research Method
 
+The Census Bureau's (ADD YEAR HERE) American Community Survey (ACS) (ADD 1 OR 5 HERE)-Year Public Use Microdata Sample (PUMS) was utilized for this request. The ACS is a demographics survey that gathers yearly information such as ancestry, citizenship, educational attainment, income, language proficiency, migration, disability, employment, and housing characteristics [@ACS].
+
+The ACS PUMS permits users to create custom estimates for individuals and households within geographic areas known as Public Use Microdata Areas (PUMAs). Three PUMAs collectively generate estimates for the entire Forsyth County, NC population based on the survey responses of a relatively small group of respondents, meaning that the estimates derived from the survey respondents may not perfectly match reality (i.e., if the Census Bureau were able to ask everyone in the county the same question, they may get slightly differing estimates). [ADD SENTENCE FOR 5-YEAR ESTIMATES] Since this analysis uses a (ADD 5 HERE)-year sample of survey response data collected from (ADD YEAR HERE) to (ADD YEAR HERE), the estimates included below can be best understood as the average for the timespan.
+
+The survey response data was analyzed to obtain (ADD “totals” AND/OR “proportions”) with the margin of error (MOE) set at the 95% confidence level. The MOE reflects the range that analysts are 95% confident that the actual population (ADD “totals” AND/OR “proportions”) falls within. Because some of the groups described in this report may be small, the MOE may be very large because the responses are based on a small number of survey responses. (OPTIONAL) Analysts included calculated estimates; however, some estimates may be unreliable, and users should check the MOE to ensure that the uncertainty level is acceptable for how they intend to use the information.
+
+[ADD PARAGRAPH IF STATISTICAL TESTING PERFORMED] Statistical testing was performed to ensure the differences between the comparison groups were not due to chance or because of ACS’ survey sampling. If a difference does not pass the testing, it does not necessarily mean a meaningful difference does not exist in the real world. When working with surveys with relatively small groups of respondents like the ACS, too few people may have been surveyed from a particular group to be confident that the differences in the data reflect differences in the real world. As a rule of thumb, it is easier to be confident that larger differences exist in the real world than smaller differences and more people being in a group makes it easier to measure small differences with confidence. When using ACS data, it is more difficult to be confident in differences if one or more of the groups measured is relatively small. 
+
+(OPTIONAL) The analysis used the following variables: (INPUT VARIABLES HERE) [@PUMS]. (LIST VARIABLES CREATED FROM THE ACS VARIABLES AND WHAT THEY MEAN).
+
 ## Results
 
 ```{r include = FALSE}
@@ -25,7 +35,6 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
 ```
 
 ```{r include = FALSE}
-#load libraries here
 library(tidyverse)
 library(srvyr)
 library(tidycensus)
