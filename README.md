@@ -10,4 +10,4 @@ The FFTemplates package contains a data request, PDF bookdown, and GitBook bookd
 
 ## How it works
 
-This package provides a data request, PDF bookdown, or GitBook bookdown template to be used by the Forsyth Futures' staff. Type either '?`Data Request Template`', '?`PDF Template`', or '?`GitBook Template`' after loading the package, i.e., `library(FFTemplates)`, to see which files and lines need updating by the user.
+This package provides a data request, PDF bookdown, or GitBook bookdown template to be used by the Forsyth Futures' staff. Type either ?\`Data Request Template\`, ?\`PDF Template\`, or ?\`GitBook Template\` after loading the package, i.e., `library(FFTemplates)`, to see which files and lines need updating by the user.

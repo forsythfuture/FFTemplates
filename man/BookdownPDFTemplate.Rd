@@ -21,8 +21,7 @@ order within the rmd_files field.
 The index.Rmd file's github-repo field should be updated for the proper GitHub
 repository name. Otherwise, the user can customize as they choose.
 
-The preamble.tex file can be edited on lines 72 and 73 to add the organization
-name and title, respectively.
+The preamble.tex file can be edited on line 100 to add the report title.
 
 The skeleton.Rmd file displays an example of how the an Rmd file should be set
 for the first Rmd following the index.Rmd file ONLY. If the user adds multiple 

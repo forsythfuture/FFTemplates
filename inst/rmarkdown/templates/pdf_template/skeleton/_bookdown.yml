@@ -4,5 +4,5 @@ language:
     chapter_name: "Section "
 delete_merged_file: true
 rmd_subdir: true
-rmd_files: ["index.Rmd", "Untitled.Rmd"]
+rmd_files: ["index.Rmd", "skeleton.Rmd"]
            

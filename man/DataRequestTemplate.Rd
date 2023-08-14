@@ -9,7 +9,7 @@ This template provides a data request skeleton to be used by the
 Forsyth Futures' staff. 
 
 The preamble.tex file needs to be updated with a title and organization name on 
-lines 56 and 25, respectively.
+lines 57 and 25, respectively.
 
 The bibliography.bib file will need to be edited depending on whether
 the packages included are used, or if additional packages are leveraged.

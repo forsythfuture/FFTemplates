@@ -1,13 +1,15 @@
+
+% pagestyle preference
 \usepackage{booktabs}
 \usepackage{longtable}
-
 \raggedbottom
 
 % convert footnotes to endnoted
 \usepackage{endnotes}
 \renewcommand*{\enoteheading}{} % remove 'Notes' above endnotes
 \let\footnote=\endnote
-% note: also need to add the following at the end of the final document
+
+% NOTE DL: also need to add the following at the end of the final document
 %\theendnotes
 %\newpage
 
@@ -23,7 +25,7 @@
 \renewcommand{\headrulewidth}{0pt}
 % edit footers
 \rfoot{\includegraphics[height=4.5em,width=6cm]{logo.png}}
-\lfoot{\vspace{-3.4em} \footnotesize \fontfamily{phv}\selectfont \\ Add Organization here Data Request \\ \today \\ Page \thepage\ of \pageref{LastPage}}
+\lfoot{\vspace{-3.4em} \footnotesize \fontfamily{phv}\selectfont \\ ADD ORGANIZATION HERE Data Request \\ \today \\ Page \thepage\ of \pageref{LastPage}}
 
 % indent first endnote
 \usepackage{etoolbox}
@@ -52,15 +54,15 @@
 
 % drafting title
 \newcommand*{\myTitle}{\begingroup
-\vspace*{14\baselineskip}
+  \vspace*{14\baselineskip}
 
-{\Huge \fontfamily{phv}\selectfont \textbf{Add your title here}} % Title
-\vspace*{2\baselineskip}
-
-\noindent\rule[0.5ex]{\linewidth}{1pt}
-\vspace*{1\baselineskip}
-
-{\Large \fontfamily{phv}\selectfont \textbf{\today}} % Date
+  {\Huge \fontfamily{phv}\selectfont \textbf{ADD TITLE HERE}} % Title
+  \vspace*{2\baselineskip}
+  
+  \noindent\rule[0.5ex]{\linewidth}{1pt}
+  \vspace*{1\baselineskip}
+  
+  {\Large \fontfamily{phv}\selectfont \textbf{\today}} % Date
 
 \endgroup\clearpage}
 

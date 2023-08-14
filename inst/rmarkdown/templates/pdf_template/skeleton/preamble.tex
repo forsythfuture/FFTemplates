@@ -1,30 +1,47 @@
+
+% pagestyle preference
 \usepackage{booktabs}
 \usepackage{longtable}
-
 \raggedbottom 
 
-% convert footnotes to endnoted
+% make first-level headers say 'Section' instead of 'Chapter'
+\AtBeginDocument{\renewcommand{\chaptername}{Section}}
+
+% prevent footnotes from renumbering at the start of each section 
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+
+% convert footnotes to endnotes
 \usepackage{endnotes}
 \renewcommand*{\enoteheading}{} % remove 'Notes' above endnotes
 \let\footnote=\endnote
-% note: also need to add the following at the end of the final document 
+
+% NOTE DL: may also need to add the following at the end of the final document 
 %\theendnotes
 %\newpage
-  
-  % indent first endnote
-  \usepackage{etoolbox}
-  \patchcmd{\enoteformat}{1.8em}{0pt}{}{}
-  
-  % remove headers from empty pages
-  \usepackage{emptypage}
-  
-  % remove headers from table of contents
-  \makeatletter \def\cleardoublepage{\clearpage\if@twoside
-    \ifodd\c@page\else \hbox{} \vspace*{\fill}
-    \thispagestyle{empty} \newpage
-    \if@twocolumn\hbox{}\newpage\fi\fi\fi} \makeatother
-  
-  % don't let figures and tables float
+
+% style headers/footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhf{} % clear all header/footer fields
+\setlength{\headheight}{15pt}
+\fancyfoot[R]{\thepage} % set page numbers bottom right
+\renewcommand{\headrulewidth}{0pt}
+
+% indent first endnote
+\usepackage{etoolbox}
+\patchcmd{\enoteformat}{1.8em}{0pt}{}{}
+
+% remove headers from empty pages
+\usepackage{emptypage}
+
+% remove headers from table of contents
+\makeatletter \def\cleardoublepage{\clearpage\if@twoside
+\ifodd\c@page\else \hbox{} \vspace*{\fill}
+\thispagestyle{empty} \newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi} \makeatother
+
+% don't let figures and tables float
 \usepackage{float}
 \let\origfigure\figure
 \let\endorigfigure\endfigure
@@ -34,51 +51,59 @@
     \endorigfigure
 }
 
-%change font to Helvetica
+% change font to Helvetica
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-%helps captions not go to new line
+% prohibits captions from going to new line
 \usepackage{caption}
 \captionsetup{width=5in}
+
+% change pagestyle to landscape, if needed
+  % NOTE DL: page numbers will rotate, will need to remove them
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+
+% cut any blank pages
+\usepackage{afterpage}
+\newcommand\blankpage{%
+  \null
+  \thispagestyle{empty}%
+  \addtocounter{page}{-1}%
+  \newpage}
+\afterpage{\blankpage}
+
+% remove first page if blank
+\usepackage{atbegshi}
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 % no hanging titles at the end of the page
 \usepackage[nobottomtitles*]{titlesec}
 
-% edit footer and header
-\usepackage{graphicx}
-\usepackage{lastpage}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-% clears headers and footers
-\fancyhf{}
-% remove header
-\renewcommand{\headrulewidth}{0pt}
-% edit footers
-\rfoot{\vspace{-1.3\baselineskip}\includegraphics[height=4.5em,width=6cm]{logo.png}}
-\lfoot{\vspace{-0.5\baselineskip} \footnotesize \fontfamily{phv}\selectfont Add Organization here \\ \today \\ Page \thepage\ of \pageref{LastPage}}
+% list of figures and tables package
+\usepackage[nottoc]{tocbibind}
 
 % drafting title
 \newcommand*{\myTitle}{\begingroup
 
   \thispagestyle{empty}
 
-	\raggedleft % Right align the title page
+	\raggedleft % right align the title page
 	
-	\rule{2pt}{\textheight} % Vertical line
-	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
-	\parbox[b]{0.9\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+	\rule{2pt}{\textheight} % vertical line
+	\hspace{0.05\textwidth} % whitespace between the vertical line and title page text
+	\parbox[b]{0.9\textwidth}{ % paragraph box for holding the title page text, adjust the width to 
+	% move the title page left or right on the page
 		
-		{\large \fontfamily{phv}\selectfont Add Organization Here}\\[1\baselineskip]
-		{\Huge \fontfamily{phv}\selectfont \textbf{Add Title Here}}\\[4\baselineskip] % Title
-		{\Large \textbf{\today}} % Date
-		
+		% TODO DL: Add the title where 'ADD TITLE HERE' is
+		{\Huge \fontfamily{phv}\selectfont \textbf{ADD TITLE HERE}}\\[4\baselineskip] % Title
+
 		\vspace{0.5\textheight} % Whitespace between the title block and the graphic
 		
+		% NOTE DL: logo.png is the filename of Forsyth Futures' logo. if the filename is changed or 
+		% in a different folder, this will need to be updated
 		{\noindent \includegraphics[height=6em,width=8cm]{logo.png}}\\[\baselineskip] % Logo
 	}
-
+	
 \endgroup\clearpage}
-
-% no hyphens
-\usepackage[none]{hyphenat}

@@ -3,7 +3,7 @@ title: "Add Title Here"
 author: "Forsyth Futures"
 output:
   bookdown::gitbook:
-    css: style.css
+    css: styles.css
 site: "bookdown::bookdown_site"
 documentclass: book
 # github-repo: forsythfuture/Add Repository Name Here

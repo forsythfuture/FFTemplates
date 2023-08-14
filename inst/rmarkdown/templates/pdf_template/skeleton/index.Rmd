@@ -1,4 +1,5 @@
 ---
+title: "Forsyth Futures"
 output:
   bookdown::pdf_book:
     number_sections: false
