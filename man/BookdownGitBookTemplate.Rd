@@ -11,6 +11,11 @@ Configure Build Tools. Select Website on the Project build tools dropdown.
 Update the Site directory to match where the bookdown files are located. A Build
 pane should show up likely next to your Git pane.
 
+To publish the GitBook, use bookdown's \link[bookdown]{publish_book} function by
+adding the report's title to the name argument and 'forsythfutures' to the 
+account argument. Log into the Forsyth Futures' account at
+\href{https://bookdown.org/}{bookdown.org}.
+
 The bibliography.bib file will need to be edited depending on whether the 
 packages included are used, or if additional packages are leveraged.
 

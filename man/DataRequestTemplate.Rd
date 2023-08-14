@@ -5,8 +5,8 @@
 File -> New File -> RMarkdown -> From Template -> Data Request Template
 }
 \description{
-This template provides a data request skeleton to be used by the
-Forsyth Futures' staff. 
+This template provides a data request skeleton to be used by the Forsyth 
+Futures' staff. 
 
 The preamble.tex file needs to be updated with a title and organization name on 
 lines 57 and 25, respectively.
